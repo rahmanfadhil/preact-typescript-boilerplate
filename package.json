@@ -1,0 +1,25 @@
+{
+  "name": "preact-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development parcel index.html",
+    "build": "parcel build index.html",
+    "start": "NODE_ENV=production serve dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/parcel-env": "0.0.0",
+    "parcel-bundler": "^1.9.7",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "serve": "^9.6.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "preact": "^8.3.1",
+    "preact-compat": "^3.18.3"
+  }
+}
