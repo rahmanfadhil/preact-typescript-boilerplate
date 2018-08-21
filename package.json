@@ -6,20 +6,43 @@
   "scripts": {
     "dev": "NODE_ENV=development parcel index.html",
     "build": "parcel build index.html",
-    "start": "NODE_ENV=production serve dist"
+    "start": "NODE_ENV=production parcel index.html",
+    "test": "jest"
   },
-  "author": "",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  },
+  "author": "Rahman Fadhil",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^23.3.1",
     "@types/parcel-env": "0.0.0",
+    "@types/redux-logger": "^3.0.6",
+    "jest": "^23.5.0",
     "parcel-bundler": "^1.9.7",
+    "parcel-plugin-sw-precache": "^1.0.1",
+    "redux-logger": "^3.0.6",
+    "serve": "^10.0.0",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.0.1"
   },
   "dependencies": {
-    "serve": "^9.6.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
     "preact": "^8.3.1",
-    "preact-compat": "^3.18.3"
+    "preact-redux": "^2.0.3",
+    "preact-router": "^2.6.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   }
 }

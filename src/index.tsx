@@ -1,4 +1,4 @@
-import { h, render, Component } from "preact";
+import { h, render } from "preact";
 import "preact/devtools";
 import App from "./App";
 
